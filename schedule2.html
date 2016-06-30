@@ -1,0 +1,113 @@
+<head>
+   <title> Anime Society</title> 
+   <script src="bower_components/jquery-2.2.0.min/index.js"></script>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Dosis:400,800' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="parallax.js/parallax.js"></script>
+
+   <link rel="stylesheet" type="css/text" href="styles.css">
+       <script>
+        $(document).ready(function(){
+            var toggle=true;
+            console.log(toggle);
+            $(".viewAvailability").click(function(){
+               $(".currentAvailability").toggle("fast"); 
+            });
+            
+            $(".slideeIcon").click(function () {
+                
+                toggle=!toggle;
+                console.log(toggle);
+                
+                if(toggle== false){
+                        $(this).animate({
+                        width: "100px",
+                        height: "100px"
+                        }, 500, function() {
+                        // Animation complete.
+                        });
+                }else{
+                     $(this).animate({
+                        width: "40px",
+                        height: "40px"
+                        }, 500, function() {
+                        // Animation complete.
+                        });
+                }
+    
+            });
+          });
+    </script>
+</head>
+<html>
+    
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="index.php">Library</a></li>
+        <li class="active"><a href="schedule.html">Schedule</a></li> 
+        <li><a href="#">About</a></li> 
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+<body>
+    
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Schedule</h1>
+        </div>
+    </div>
+    
+    
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+            <img class="showCardimg img-responsive" src="http://static.comicvine.com/uploads/scale_large/6/67663/4922595-01.jpg">
+        </div>
+        <div class="col-sm-9">
+            <div class="showCardTextBlock">
+                  <div class="showCardtitle">Title Goes Here</div>
+                  <div class="showCardDescription">Description that is very long goes here. Description that is very long goes here. Description that is very long goes here.</div>
+                  <div class="showCardRating">Rating thing</div>
+              </div>
+        </div>
+    </div>    
+    
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+            <img class="showCardimg img-responsive" src="http://static.comicvine.com/uploads/scale_large/6/67663/4922595-01.jpg">
+        </div>
+        <div class="col-sm-9">
+            <div class="showCardTextBlock">
+                  <div class="showCardtitle">Title Goes Here</div>
+                  <div class="showCardDescription">Description that is very long goes here. Description that is very long goes here. Description that is very long goes here.</div>
+                  <div class="showCardRating">Rating thing</div>
+              </div>
+        </div>
+    </div>   
+   
+</body>
+</html>

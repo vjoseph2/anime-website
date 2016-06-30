@@ -1,0 +1,444 @@
+<head>
+   <title> Anime Society</title> 
+   <script src="bower_components/jquery-2.2.0.min/index.js"></script>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="parallax.js/parallax.js"></script>
+  
+<script type='text/javascript' src='bower_components/moment/moment.js'></script>
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.js"></script>
+<script type='text/javascript' src='bower_components/fullcalendar/dist/gcal.js'></script>
+
+        <script src="parallax.js/parallax.js"></script>
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.css">
+<link rel="stylesheet" media="print" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.print.css">
+   <link rel="stylesheet" type="css/text" href="styles.css">
+       <script>
+        $(document).ready(function(){
+            var toggle=true;
+            console.log(toggle);
+            $(".viewAvailability").click(function(){
+               $(".currentAvailability").toggle("fast"); 
+            });
+            
+            $(".slideeIcon").click(function () {
+                
+                toggle=!toggle;
+                console.log(toggle);
+                
+                if(toggle== false){
+                        $(this).animate({
+                        width: "100px",
+                        height: "100px"
+                        }, 500, function() {
+                        // Animation complete.
+                        });
+                }else{
+                     $(this).animate({
+                        width: "40px",
+                        height: "40px"
+                        }, 500, function() {
+                        // Animation complete.
+                        });
+                }
+    
+            });
+          });
+    </script>
+      <script>
+        $(document).ready(function(){
+            
+        $(".col-sm-2").click(function(){
+              var titleDesc=  $(this).find(".titleDescription").text();
+              var titleTi=  $(this).find(".showTitle").text();
+              var titleImg= $(this).find(".showCardimg").attr("src");
+            $(".descriptionGoesHere").text(titleDesc);
+            $(".titleGoesHere").text(titleTi);
+            $(".modal-body").text(titleDesc);
+            $(".modal-header").text(titleTi);
+            $(".imgGoesHere").attr("src",titleImg);
+            
+            $(".descriptionGoesHere").show();
+            $(".titleGoesHere").show();
+            $(".imgGoesHere").show();
+          });
+          
+         $(".modalButton").click(function(){
+              var titleImg= $(this).find(".showCardimg").attr("src");
+              $('#myModal').modal('show');
+            $('.imgGoesHere').attr('src', $(titleImg).attr('src'));
+         });
+         
+          });
+    </script>
+    <script type='text/javascript'>
+
+$(document).ready(function() {
+   $(document).ready(function() {
+    $('#calendar').fullCalendar({
+        events: {
+            googleCalendarApiKey: 'AIzaSyC7P_NlytJ-pPhuC9cfPES-Y2hsvQUl4U0',
+            googleCalendarId: 'j34bc0ugapf6s9c36n4rtctnfc@group.calendar.google.com',
+        }
+    });
+});
+});
+
+</script>
+</head>
+<html>
+    
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Anime Society</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Welcome</a></li>
+          <li><a href="#section2">Schedule of Anime</a></li>
+          <li><a href="#section3">eBoard</a></li>
+          <li><a href="#section4">Calendar of Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<!--<img class="backImg" src="images/animeSociety20152016.jpg">-->
+<div id="section1">
+    <div class="row">
+        <div class="col-sm-12 "><center>
+          <img src="images/animeSociety20152016-4.png" class="img-responsive" width="auto"></center>
+        </div>
+    </div>
+    
+<div class="row "> 
+   
+      <div class="col-sm-12">
+       <center><h1>Welcome</h1>
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum."</p> </center> 
+    </div>
+
+</div>
+</div>
+
+<!--<div class="parallax-window" data-parallax="scroll" data-image-src="http://dreamatico.com/data_images/night/night-8.jpg" ><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </div>-->
+<!--    <section></section>-->
+
+<!--Schedule Start -->
+   <div id="section2">
+    <div class="row">
+        <div class="col-sm-12 panel1-1">
+            <h1>Schedule</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <center>
+                
+                <a href="#" class="modalButton hidden-lg " ><img class="showCardimg img-responsive hidden-lg" src="http://img1.ak.crunchyroll.com/i/spire4/49060cb7e02dd3d338273d2530e4888f1404663731_full.jpg">
+                <div class="showTitle hidden-lg ">Monthly Girls Nozaki-kun</div></a>
+                
+                <img class="showCardimg img-responsive hidden-xs" src="http://img1.ak.crunchyroll.com/i/spire4/49060cb7e02dd3d338273d2530e4888f1404663731_full.jpg">
+                <div class="showTitle hidden-xs ">Monthly Girls Nozaki-kun</div>
+                
+                   <div class="titleDescription"><p>High school student Chiyo Sakura has a crush on schoolmate Umetarou Nozaki, but when she confesses her 
+                   love to him, he mistakes her for a fan and gives her an autograph. When she says that she always wants to be with him, he invites her to 
+                   his house and has her help on some drawings. Chiyo discovers that Nozaki is actually a renowned shoujo manga artist named Sakiko Yumeno. 
+                   She then agrees to be his assistant in order to get closer to him. As they work on his manga, they encounter other schoolmates who assist 
+                   them or serve as inspirations for characters in the stories.
+</p></div>
+            </center>
+        </div>
+        <div class="col-sm-2"><center>
+            
+           <img class="showCardimg img-responsive hidden-xs	" src="http://cdn.myanimelist.net/images/anime/8/21197.jpg">
+        <div class="showTitle hidden-xs	">Shakugun no Shana</div>
+        
+         <a href="#" class="modalButton hidden-lg " ><img class="showCardimg img-responsive hidden-lg " src="http://cdn.myanimelist.net/images/anime/8/21197.jpg">
+        <div class="showTitle hidden-lg ">Shakugun no Shana</div></a>
+        
+        
+        <div class="titleDescription"><p>The world has become a slaughtering ground for the Crimson Denizens, mysterious beings from a parallel universe who thrive on the life energy of humans.
+        These merciless murderers only leave behind scant remainders of souls called "Torches," which are mere residues that will eventually be destroyed, along with the very fact of the 
+        victims' existence from the minds of the living. In an ambitious endeavor to put an end to this invisible, hungry massacre, warriors called Flame Hazes relentlessly fight these monsters.
+        </p><p>One fateful day, Yuuji Sakai ceases to be a regular high schooler—he becomes trapped in a crevice of time and is suddenly attacked by a Denizen. Coming to his rescue just in the nick of 
+        time is a nameless hunter who seems no different from an ordinary young girl except for her blazing eyes and burning crimson hair. However, before Yuuji can learn anything more about his
+        situation, he discovers that he has already been reduced to a Torch—merely a scrap of memory waiting to be extinguished.</p></div>
+            </center></div>
+        
+        <div class="col-sm-2"><center>
+            <a href="#" class="modalButton  hidden-lg "  ><img class="showCardimg img-responsive  hidden-lg " src="http://static.comicvine.com/uploads/scale_large/6/67663/4922595-01.jpg">
+        <div class="showTitle hidden-lg">School Live!</div></a>
+        
+        <img class="showCardimg img-responsive hidden-xs	" src="http://static.comicvine.com/uploads/scale_large/6/67663/4922595-01.jpg">
+        <div class="showTitle hidden-xs	">School Live!</div>
+        
+        
+        <div class="titleDescription"><p>Yuki Takeya loves her school so much that she does not want to ever leave! Megurigaoka Private High School is a unique and lively place where Yuki
+        enjoys her carefree life as a third-year high school student and member of the School Living Club. The club, consisting of the president Yuuri Wakasa, the athletic Kurumi Ebisuzawa,
+        the mature junior Miki Naoki, the supervising teacher Megumi Sakura, and the club dog Taroumaru, prides itself on making the most of life at school. However, this illusion of
+        endless bliss is just a bubble waiting to be burst because Yuki is unable to perceive what is truly happening around her. In reality, all is not as it seems—the real purpose of
+        the School Living Club is to escape from the shocking and disturbing truth: the girls are in the middle of a zombie apocalypse and have barricaded themselves inside the school 
+        as the sole survivors.</p><p>Based on the manga by Kaihou Norimitsu, Gakkougurashi! follows a group of girls who are forced to adapt to a post-apocalyptic life all by themselves.
+        They have no means of contact with the outside world and are surrounded by hostile undead waiting to devour them. The girls must not only contend with the challenge of survival;
+        they must also strive to maintain a false appearance of normality in Yuki's presence.</p>
+
+</p></div>
+            </center></div>
+        
+        <div class="col-sm-2"><center>
+            
+            <a href="#" class="modalButton  hidden-lg " ><img class="showCardimg img-responsive  hidden-lg " src="https://upload.wikimedia.org/wikipedia/en/0/04/Tonari_no_Seki-kun_volume_1_cover.jpg">
+        <div class="showTitle  hidden-lg ">Master of Killing Time</div></a>
+        
+          <img class="showCardimg img-responsive hidden-xs	" src="https://upload.wikimedia.org/wikipedia/en/0/04/Tonari_no_Seki-kun_volume_1_cover.jpg">
+        <div class="showTitle hidden-xs	">Master of Killing Time</div>
+        
+        <div class="titleDescription"><p>The original manga revolves around a girl named Yokoi who sits next to a boy only known as Seki-kun. During class, Seki-kun continues 
+        to not pay attention and instead creates amazing little distractions, such as a detailed golf course with the course's hole being a dent in his desk, or an entire 
+        dramatic war being played out by paper shogi pieces. Yokoi often finds herself getting reluctantly interested in his games, even though they always seem to end up getting 
+        HER in trouble with the teacher!
+</p></div>
+            </center></div>
+        
+        <div class="col-sm-2"><center>
+        
+        <img class="showCardimg img-responsive hidden-xs	" src="http://cdn.myanimelist.net/images/anime/4/30327.jpg">
+        <div class="showTitle hidden-xs	">Fate/Stay Night</div>
+        
+        <a href="#" class="modalButton  hidden-lg " ><img class="showCardimg img-responsive  hidden-lg " src="http://cdn.myanimelist.net/images/anime/4/30327.jpg">
+        <div class="showTitle hidden-lg ">Fate/Stay Night</div></a>
+        
+        <div class="titleDescription"><p>Rescued from a hellish inferno as a child and taught the art of magecraft by Kiritsugu Emiya, Shirou 
+        Emiya idolized his adoptive father. After his father's untimely death, Shirou vowed to follow in his footsteps and fight for the good of the world. Years later, Shirou 
+        lingers at his school after nightfall and comes across a battle being waged by two superhuman beings known as Servants. When one of these Servants tries to kill him, Shirou 
+        ends up summoning a Servant of his own, a knight by the name of Saber. Together, they become the final participants in the fifth Holy Grail War, a free-for-all battle carried
+        out by seven Servants and their summoners, with the prize being a magical device that can grant any wish. <p> Based off the famous visual novel by Type-Moon, Fate/Stay Night
+        chronicles the trials and challenges that Shirou faces as he enters a battle that he knew nothing about, but that may very well lead him towards the path of becoming a hero
+        like his father… if he survives, that is.</p>
+</p></div>
+            </center></div>
+        
+        <div class="col-sm-2"><center>
+            
+            <a href="#" class="modalButton hidden-lg " ><img class="showCardimg img-responsive hidden-lg " src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Deathparadevisual.jpg/230px-Deathparadevisual.jpg">
+        <div class="showTitle hidden-lg ">Death Parade</div></a>
+        
+       <img class="showCardimg img-responsive hidden-xs	" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Deathparadevisual.jpg/230px-Deathparadevisual.jpg">
+        <div class="showTitle hidden-xs	">Death Parade</div>
+            
+        <div class="titleDescription"><p>At the border between heaven and hell lies a bar. There the attendant will, one after another, challenge pairs of the recently deceased to a random
+        game in which their fate of either ascending into heaven or falling into hell will be wagered. Whether it's bowling, darts, air hockey, or anything in between, each person's true 
+        nature will be revealed in a ghastly parade of death and memories, dancing to the whims of the bar's master. Welcome to Quindecim, where Decim, arbiter of the afterlife, awaits!</p>
+        Death Parade expands upon the original one-shot intended to train young animators. It follows yet more people receiving judgement - until a strange, black-haired guest causes Decim
+        to begin questioning his own rulings.</p>
+</p></div>
+            </center></div>
+    </div>
+    <div class="row hidden-xs">
+        <div class="col-sm-3">
+            
+            <img class="imgGoesHere" src="#">
+        </div>
+        <div class="col-sm-9">
+            <h2 class="titleGoesHere">Title</h2>
+            <p class="descriptionGoesHere">Description</p>
+            <p class="raitingGoesHere "><i>Rating</i></p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-12">
+                
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                           <img src="#" "imgGoesHere"> <p>Some text in the modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+<!--Schedule End-->
+
+    <!--<div class="parallax-window" data-parallax="scroll" data-image-src="http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/beach-wallpaper-9.jpg"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>-->
+    <!-- <section></section>-->
+<!--eBoard Start -->
+<div id="section3">
+    <div class="row">
+        <div class="col-sm-12">
+            
+    <h1> Meet the eBoard</h1>
+    
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-12">
+          
+          <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">President <span class="glyphicon glyphicon-user"></span></a></li>
+    <li><a data-toggle="tab" href="#menu1">Vice-President <span class="glyphicon glyphicon-user"></span></a></li>
+    <li><a data-toggle="tab" href="#menu2">Treasurer <span class="glyphicon glyphicon-piggy-bank"></span></a></li>
+    <li><a data-toggle="tab" href="#menu3">Secretary <span class="glyphicon glyphicon-envelope"></span></a></li>
+    <li><a data-toggle="tab" href="#menu4">Public Relations <span class="glyphicon glyphicon-thumbs-up"></span></a></li>
+    <li><a data-toggle="tab" href="#menu5">Librarian <span class="glyphicon glyphicon-book"></span></a></li>
+    <li><a data-toggle="tab" href="#menu6">Webmaster <span class="glyphicon glyphicon-globe"></span></a></li>
+  </ul>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    
+              
+          <div class="tab-content">
+          
+    <div id="home" class="tab-pane fade in active">
+        <img class="profImg" src="images/no-profile-img.gif">
+        
+        <table class="profInfo table">
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        </table>
+        
+        <section class="namePlate">John Doe</section>
+ 
+    </div>
+    <div id="menu1" class="tab-pane fade">
+       <img class="profImg" src="images/no-profile-img.gif">
+        
+        <table class="profInfo table">
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        </table>
+        
+        <section class="namePlate">John Doe</section>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+        <img class="profImg" src="images/no-profile-img.gif">
+        
+        <table class="profInfo table">
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        </table>
+        
+        <section class="namePlate">John Doe</section>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+       <img class="profImg" src="images/no-profile-img.gif">
+        
+        <table class="profInfo table">
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        </table>
+        
+        <section class="namePlate">John Doe</section>
+    </div>
+    <div id="menu4" class="tab-pane fade">
+        <img class="profImg" src="images/no-profile-img.gif">
+        
+        <table class="profInfo table">
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        </table>
+        
+        <section class="namePlate">Jane Doe</section>
+    </div>
+    <div id="menu5" class="tab-pane fade">
+       <img class="profImg" src="images/no-profile-img.gif">
+        
+        <table class="profInfo table">
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        </table>
+        
+        <section class="namePlate">Jane Doe</section>
+    </div>
+    <div id="menu6" class="tab-pane fade">
+        <img class="profImg" src="images/no-profile-img.gif">
+        
+        <table class="profInfo table">
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        <tr><td class="traitTbl" colspan="2">Word</td><td>Word</td></tr>
+        </table>
+        
+        <section class="namePlate">Jane Doe</section>
+    </div>
+  </div>
+  
+  
+  </div>
+      
+  </div>
+  
+  </div>
+<!--Eboard End-->
+
+<!--Calendar start -->
+<div id="section4" >
+ <div class="row">
+    <div class="col-sm-12">
+      <h1>Calendar of Events</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    
+    <div class="col-sm-10">
+      <div id='calendar'></div>
+    </div>
+    
+    <div class="col-sm-1"></div>
+  </div>
+  </div>
+<!--Calendar End-->
+
+</html>
