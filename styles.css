@@ -239,6 +239,7 @@ footer{
     height:auto;
     width:100%;
     padding-top:20px;
+    position:relative;
     background-color:#b31b1b;
     color:white;
     
