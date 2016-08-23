@@ -1,195 +1,77 @@
-<head>
-   <title> Anime Society</title> 
-   
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-   <script src="bower_components/jquery-2.2.0.min/index.js"></script>
-   <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Ubuntu|Josefin+Slab|Lato' rel='stylesheet' type='text/css'>
-   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="parallax.js/parallax.js"></script>
-
-   <link rel="stylesheet" type="css/text" href="styles.css">
-       <script>
-        $(document).ready(function(){
-            var toggle=true;
-            console.log(toggle);
-            $(".viewAvailability").click(function(){
-               $(".currentAvailability").toggle("fast"); 
-            });
-            
-            $(".slideeIcon").click(function () {
-                
-                toggle=!toggle;
-                console.log(toggle);
-                
-                if(toggle== false){
-                        $(this).animate({
-                        width: "100px",
-                        height: "100px"
-                        }, 500, function() {
-                        // Animation complete.
-                        });
-                }else{
-                     $(this).animate({
-                        width: "40px",
-                        height: "40px"
-                        }, 500, function() {
-                        // Animation complete.
-                        });
-                }
-    
-            });
-          });
-    </script>
-      <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 41.720665, lng: -73.935844},
-            mapTypeId: google.maps.MapTypeId.HYBRID,
-          zoom: 22
-        });
-        var myLatLng = {lat:41.720665, lng:-73.935844};
-        var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Student Center Room 3101'
-        });
-        
-        marker.setMap(map);
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjWehYXBWibPdicdbUwcrCQtNZgVMcQQE&callback=initMap"
-    async defer></script>
-</head>
+<!DOCTYPE html>
 <html>
-    
-<nav class="navbar navbar-inverse">
+    <head>
+        <link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>        
+    </head>
+    <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Anime Society</a>
+      <a class="navbar-brand" href="index.html">Marist College Anime Society</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.php">Library</a></li>
-        <li><a href="schedule.html">Schedule</a></li> 
-        <li><a href="#">About</a></li> 
+        <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+        <li ><a href="current_listings.html">Current Listings</a></li>
+        <li><a href="calendar.html">Upcomming Events</a></li>
+        <li><a href="e-board.html">Meet the eBoard</a></li>
       </ul>
-     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeEJT9AekN3ZtvHy6ZKRt5mt2-k0Zhj3vQfxEktZRzzFMMj6w/viewform">Have an Idea or Suggestion for the Club? Click here!</a></li>
+      </ul>
+    </div>
     </div>
   </div>
 </nav>
-<!--<img class="backImg" src="images/animeSociety20152016.jpg">-->
-
-    <div class="row">
-        <div class="col-sm-12 "><center>
-          <img src="images/animeSociety20152016-4.png" class="img-responsive" width="auto"></center>
-        </div>
-    </div>
     
-<div class="row "> 
-   
-      <div class="col-sm-12">
-       <center><h1>Welcome</h1>
-       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-        sunt in culpa qui officia deserunt mollit anim id est laborum."</p> </center> 
-    </div>
-
-</div>
-<div class="row">
-        <div class="col-sm-12 ">
-        </div>
-    </div>
-
-<div class="row"><center>
-    <div class="col-sm-4 ">
+    <body>
         
-        <a href="eboard.html"> <div class="card img-responsive">
-        <img class="card-img-top img-rounded img-responsive" src="images/students2.jpg" alt="Card image cap">
-            <div class="card-block img-responsive">
-                <h4 class="card-title img-responsive">Meet the e-Board</h4>
-                <p class="card-text img-responsive">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="eboard.html" class="btn btn-primary  img-responsive cardButton"><span class="glyphicon glyphicon-user"></span> e-Board</a>
+        <div class="row">
+            <div class="col-sm-12 main-banner">
             </div>
-        </div></a>
-        
-    </div>
-    <div class="col-sm-4">
-        
-       <a href="#"><div class="card img-responsive">
-        <img class="card-img-top img-rounded img-responsive " src="https://ccippg1p.s3.amazonaws.com/uploads/production/downloadable/thumbnail/314/b04d1c1f-88a1-4212-a5ee-943aba281d4b.jpg" alt="Card image cap">
-            <div class="card-block img-responsive">
-                <h4 class="card-title img-responsive">Curent Titles</h4>
-                <p class="card-text img-responsive">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary cardButton img-responsive"><span class="glyphicon glyphicon-book"></span> Title</a>
-            </div>
-        </div></a>
-        
-    </div>
-    <div class="col-sm-4">
-        
-        <a href="calendar.html"> <div class="card img-responsive">
-        <img class="card-img-top img-rounded img-responsive" src="images/calendar.jpg" alt="Card image cap">
-            <div class="card-block img-responsive">
-                <h4 class="card-title img-responsive">Upcoming Events</h4>
-                <p class="card-text img-responsive">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="calendar.html" class="btn btn-primary cardButton img-responsive"><span class="glyphicon glyphicon-calendar"></span> Events</a>
-            </div>
-        </div></a>
-        
-    </div>
-    </center>
-</div>
-<!--<div class="row">-->
-<!--    <div class="col-sm-4">a</div>-->
-<!--    <div class="col-sm-4">b</div>-->
-<!--    <div class="col-sm-4">c</div>-->
-<!--</div>-->
-
-<footer>
-    <div class="row">
-        
-        
-        <div class="col-sm-4">
-            
-       <h2"footerHead">&nbsp;Anime Society</h2>
-        <ul id="noBullets">
-                <li>Upcoming Events</li>
-                <li>eBoard</li>
-                <li>Contact Us</li>
-        </ul>
-            
         </div>
-        <div class="col-sm-4">
-             <center><a style="color:white; text-decoration:none" href="https://www.facebook.com/groups/6228439809/"><img class="social-media" src="images/facebook-logo (1).png"> <br> Check Us Out on Facebook! </a></center>
-        </div>
-        <div class="col-sm-4">
-            
-          <center><div id="map"></div></center>  <br>
-          <center> <button type="button" class="btn btn-primary">Click on me for Directions</button></center> 
-        </div>
-            
+        
+        <div class="row">
+            <div class="col-sm-12r">
+                   <center><h1>Welcome!</h1></center>
             </div>
-<div class="row">
-    <div class="col-sm-12">
-        <center>&copy; Vallie Joseph</center>	
-    </div>
-</div>
-  
-</footer>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                  <p><center>Anime Society is a club in which anime fans can come together to befriend other anime fans</center></p>
+            </div>
+        </div>
+        
+        <div class="row"><center>
+            <div class="col-sm-4">
+                <h2>Past Listings</h2>
+                <div class="circle purple-circle"><span class="circle-glyph glyphicon glyphicon-step-backward"></span></div>
+            </div>
+            <div class="col-sm-4">
+                <h2>About Us</h2>
+                <div class="circle purple-circle"><span class="circle-glyph glyphicon glyphicon-question-sign"></span></div>
+            </div>
+            <div class="col-sm-4">
+             <h2>Suggestion Box</h2> 
+                <div class="circle purple-circle">  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEJT9AekN3ZtvHy6ZKRt5mt2-k0Zhj3vQfxEktZRzzFMMj6w/viewform">
+                    <span class="circle-glyph glyphicon glyphicon-send"></span>
+                    </a>
+                    </div>
+            </div></center>
+        </div>
+        
+    </body>
 </html>
